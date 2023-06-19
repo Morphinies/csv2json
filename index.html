@@ -13,11 +13,17 @@
     </header>
     <main class="main">
       <div class="container">
-        <textarea class="text-block textarea"></textarea>
-        <button class="btn">
+        <div class="code-block">
+          <h2 class="code-title">csv</h2>
+          <textarea id="textarea" placeholder="enter the csv here" c></textarea>
+        </div>
+        <button onclick="convert()" class="btn">
           <img class="img-arrow" src="imgs/arrow.svg" alt="convert" />
         </button>
-        <p class="text-block converted-value"></p>
+        <div class="code-block">
+          <h2 class="code-title">json</h2>
+          <p id="converted-value"></p>
+        </div>
       </div>
     </main>
   </body>
